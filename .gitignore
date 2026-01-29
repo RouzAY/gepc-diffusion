@@ -1,0 +1,119 @@
+########################
+# OS / Editor files
+########################
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+*.log
+
+.vscode/
+.idea/
+
+########################
+# Python caches
+########################
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+
+########################
+# Build / packaging
+########################
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+########################
+# Virtual environments
+########################
+.venv/
+venv/
+env/
+.conda/
+.python-version
+
+########################
+# Notebooks
+########################
+.ipynb_checkpoints/
+
+########################
+# Experiment tracking / logs
+########################
+logs/
+wandb/
+lightning_logs/
+tensorboard/
+runs/
+
+########################
+# Repo outputs
+# (ignore heavy outputs but keep lightweight summaries)
+########################
+results/**
+!results/**/*.json
+!results/**/*.yaml
+!results/**/*.yml
+!results/**/.gitkeep
+
+########################
+# Data (never commit)
+########################
+data/**
+datasets/**
+raw_data/**
+downloads/**
+!data/**/.gitkeep
+!datasets/**/.gitkeep
+
+########################
+# Large arrays / serialized artifacts
+########################
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.mat
+*.mdb
+
+########################
+# Dataset archives
+########################
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+########################
+# Checkpoints / weights (never commit)
+########################
+checkpoints/**
+pretrained/**
+models/**
+weights/**
+experiments/**
+!checkpoints/README.md
+!checkpoints/**/.gitkeep
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors
