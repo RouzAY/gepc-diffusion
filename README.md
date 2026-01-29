@@ -35,7 +35,7 @@ This repository provides:
 ├── results/                    # outputs (auto‑created)
 ├── scripts/
 │   ├── bench_gepc_images.py    # standard image benchmarks
-│   └── bench_ood_sar.py        # SAR ImageFolder benchmarks
+│   └── bench_gepc_sar.py        # SAR ImageFolder benchmarks
 ├── pyproject.toml
 ├── requirements.txt
 └── README.md
@@ -219,13 +219,13 @@ Expected layout:
 Run:
 
 ```bash
-python scripts/bench_ood_sar.py --config configs/gepc_sar_256.yaml --verbose
+python scripts/bench_gepc_sar.py --config configs/gepc_sar_256.yaml --verbose
 ```
 
 Optional (if supported by your script): save qualitative examples and score dumps:
 
 ```bash
-python scripts/bench_ood_sar.py \
+python scripts/bench_gepc_sar.py \
   --config configs/gepc_sar_256.yaml \
   --qual_dir results/qual_sar \
   --save_scores_npz results/scores_sar \
@@ -322,4 +322,4 @@ gepc:
 
 ## License / citation
 
-If you use this repository in academic work, please cite the associated GEPC paper/artifact.
+If you use this repository in academic work, please cite the associated GEPC paper.
